@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Codec Privacy Policy — Learn how the offline-first Codec developer toolbox handles your data.">
+  <title>Privacy Policy — Codec</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">Codec</a>
+      <nav>
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <div class="container">
+      <h1>Privacy Policy</h1>
+    </div>
+  </section>
+
+  <section class="page-content">
+    <div class="container">
+      <a href="index.html" class="back-link">Back to Home</a>
+      <p class="effective-date">Effective Date: October 4, 2026</p>
+
+      <div class="content-section">
+        <h2>The Short Version</h2>
+        <p>Codec is built to keep your data on your device. Every conversion, hash, decode, and generation runs locally on your iPhone or Mac using Apple's on-device frameworks (CryptoKit, Foundation, Swift stdlib). We do not require an account, do not collect personally identifiable information, and do not upload your inputs or outputs to any server.</p>
+      </div>
+
+      <div class="content-section">
+        <h2>Data We Collect</h2>
+        <p>Codec does not require an account and does not collect personally identifiable information such as your name, email address, or phone number.</p>
+        <p>If we enable optional, opt-in anonymous analytics in a future version, it will be clearly disclosed in this policy and behind a settings toggle before any data is sent. Today, Codec ships with no analytics and no telemetry.</p>
+      </div>
+
+      <div class="content-section">
+        <h2>Local Data Storage</h2>
+        <p>The following data is stored locally on your device:</p>
+        <ul>
+          <li>Recent conversions (the last 50, stored locally only)</li>
+          <li>Favorites — synced between your iPhone and Mac via iCloud Key-Value storage</li>
+          <li>Per-tool preferences (output case, padding, alphabet, etc.)</li>
+          <li>Theme preference (light, dark, or system)</li>
+          <li>App settings and defaults</li>
+        </ul>
+        <p>Your input strings and conversion results are not stored beyond the current session unless you explicitly favorite them. Deleting the app, or using "Reset all local data" in Settings, removes everything we have stored locally.</p>
+      </div>
+
+      <div class="content-section">
+        <h2>On-Device Processing</h2>
+        <p>All conversion logic — Base64, URL, Hex, hashes, HMAC, JWT decoding, JSON validation, case conversion, regex, cURL composition, password generation, UUID generation, timestamp conversion, cron parsing, and image-to-base64 — happens locally on your device. Your input, output, and any files you drag in never leave your phone or Mac.</p>
+        <p>Codec's shared conversion core (<code>EncodingCore</code>) is pure Swift with no network calls. It is designed to be auditable and open-source-friendly.</p>
+      </div>
+
+      <div class="content-section">
+        <h2>iCloud Sync (Favorites Only)</h2>
+        <p>If you sign in to iCloud and enable iCloud Key-Value storage on your device, the <em>favorites</em> you star in Codec sync between your iPhone and Mac via Apple's iCloud KVS. This is end-to-end governed by Apple's iCloud infrastructure and the standard iCloud account settings on your device.</p>
+        <p>Recent conversions, settings, and theme are stored only on the device that created them.</p>
+      </div>
+
+      <div class="content-section">
+        <h2>Third-Party Services</h2>
+        <p>Codec does not integrate any third-party SDKs that read your inputs or outputs. The current version does not include analytics, advertising, social login, crash reporting, or payment processors.</p>
+        <p>If we add any of these in a future version, we will:</p>
+        <ul>
+          <li>Disclose the vendor and the data they collect in this policy before shipping.</li>
+          <li>Gate any non-essential collection behind an opt-in toggle.</li>
+          <li>Never send your inputs, outputs, or files to a third party.</li>
+        </ul>
+      </div>
+
+      <div class="content-section">
+        <h2>Permissions</h2>
+        <p>Codec requests only the permissions needed to function:</p>
+        <ul>
+          <li>Photos library access — to pick an image for the Image ↔ Base64 tool (iOS)</li>
+          <li>Files access — to drag files into the File Hash tool (both platforms)</li>
+        </ul>
+        <p>You can revoke these permissions at any time in system Settings. The rest of Codec keeps working without them.</p>
+      </div>
+
+      <div class="content-section">
+        <h2>Children's Privacy</h2>
+        <p>Codec is safe for users of all ages:</p>
+        <ul>
+          <li>No personal information is required to use the app</li>
+          <li>There are no advertisements, social features, or external links</li>
+          <li>No data is collected from any user, including children</li>
+        </ul>
+      </div>
+
+      <div class="content-section">
+        <h2>Contact Us</h2>
+        <p>If you have questions about this Privacy Policy or Codec's data practices, please contact us:</p>
+        <p><a href="mailto:privacy@codec.app" class="email-link">privacy@codec.app</a></p>
+      </div>
+
+      <div class="content-section">
+        <h2>Changes to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated effective date. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Codec. All rights reserved.</p>
+      <nav>
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
