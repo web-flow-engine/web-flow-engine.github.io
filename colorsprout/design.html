@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The LearnColoring design system: colors, typography, shapes, elevation and the core components.">
+  <title>Design System - LearnColoring</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@600;700;800;900&family=Nunito+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/app_icon.png">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-content">
+      <a href="index.html" class="logo">
+        <img src="assets/app_icon.png" alt="LearnColoring app icon" class="logo-icon">
+        <span class="logo-text">LearnColoring</span>
+      </a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#screens">Screens</a></li>
+          <li><a href="#themes">Themes</a></li>
+          <li><a href="#learning">Learning</a></li>
+          <li><a href="#safety">Safety</a></li>
+          <li><a href="design.html" class="active">Design</a></li>
+          <li><a href="support.html">Support</a></li>
+        </ul>
+      </nav>
+      <button class="mobile-menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section page-shell">
+      <div class="container">
+        <span class="eyebrow">Toddler Wonder Play</span>
+        <h1 class="page-title">Design System</h1>
+        <p class="page-lede">The visual language of LearnColoring: toy-like tactility, cognitive clarity, and a warm palette tuned for developing eyes. This is the same system the app is built from.</p>
+
+        <h2 class="section-title">Colors</h2>
+        <p class="section-subtitle">Bright, sunny primary tones on warm eggshell surfaces - no harsh pure whites, no over-saturated clashes.</p>
+        <div class="palette">
+          <div class="swatch">
+            <div class="swatch-color" style="background:#ffb703"></div>
+            <div class="swatch-label"><strong>Sunny Honey</strong>Primary<br><code>#FFB703</code></div>
+          </div>
+          <div class="swatch">
+            <div class="swatch-color" style="background:#38bdf8"></div>
+            <div class="swatch-label"><strong>Sky Cyan</strong>Secondary<br><code>#38BDF8</code></div>
+          </div>
+          <div class="swatch">
+            <div class="swatch-color" style="background:#ff6584"></div>
+            <div class="swatch-label"><strong>Bubblegum Pink</strong>Tertiary<br><code>#FF6584</code></div>
+          </div>
+          <div class="swatch">
+            <div class="swatch-color" style="background:#4ade80"></div>
+            <div class="swatch-label"><strong>Grass Lime</strong>Confirmations<br><code>#4ADE80</code></div>
+          </div>
+          <div class="swatch">
+            <div class="swatch-color" style="background:#fb7185"></div>
+            <div class="swatch-label"><strong>Bright Coral</strong>Attention anchors<br><code>#FB7185</code></div>
+          </div>
+          <div class="swatch">
+            <div class="swatch-color" style="background:#a855f7"></div>
+            <div class="swatch-label"><strong>Violet Lavender</strong>Magic fill<br><code>#A855F7</code></div>
+          </div>
+          <div class="swatch">
+            <div class="swatch-color" style="background:#fffdf5"></div>
+            <div class="swatch-label"><strong>Canvas Base</strong>Creamy eggshell<br><code>#FFFDF5</code></div>
+          </div>
+          <div class="swatch">
+            <div class="swatch-color" style="background:#fff9eb"></div>
+            <div class="swatch-label"><strong>Surface Substrate</strong>Nested panels<br><code>#FFF9EB</code></div>
+          </div>
+          <div class="swatch">
+            <div class="swatch-color" style="background:#1e293b"></div>
+            <div class="swatch-label"><strong>Outline Ink</strong>Deep slate outline<br><code>#1E293B</code></div>
+          </div>
+          <div class="swatch">
+            <div class="swatch-color" style="background:#fbf9f1"></div>
+            <div class="swatch-label"><strong>Eggshell</strong>App background<br><code>#FBF9F1</code></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tint">
+      <div class="container">
+        <h2 class="section-title">Typography</h2>
+        <p class="section-subtitle">Rubik for headers and labels, Nunito Sans for instructions and parental surfaces. Text is always secondary to iconography.</p>
+        <div class="type-specimens">
+          <div class="specimen">
+            <div class="meta">Display Hero - Rubik 900 / 48px</div>
+            <div style="font-family:Rubik,sans-serif;font-weight:900;font-size:48px;line-height:1.1">Color it. Hear it. Watch it.</div>
+          </div>
+          <div class="specimen">
+            <div class="meta">Headline Large - Rubik 800 / 32px</div>
+            <div style="font-family:Rubik,sans-serif;font-weight:800;font-size:32px">Choose a page and start coloring</div>
+          </div>
+          <div class="specimen">
+            <div class="meta">Title Bubble - Rubik 800 / 18px</div>
+            <div style="font-family:Rubik,sans-serif;font-weight:800;font-size:18px;letter-spacing:0.5px">Elephant!</div>
+          </div>
+          <div class="specimen">
+            <div class="meta">Body Large - Nunito Sans 700 / 18px</div>
+            <div style="font-family:'Nunito Sans',sans-serif;font-weight:700;font-size:18px">Tap a region to fill it with the chosen color.</div>
+          </div>
+          <div class="specimen">
+            <div class="meta">Label Parental - Nunito Sans 700 / 13px</div>
+            <div style="font-family:'Nunito Sans',sans-serif;font-weight:700;font-size:13px;letter-spacing:0.4px;text-transform:uppercase;color:#514532">Restore purchases</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Shapes &amp; elevation</h2>
+        <p class="section-subtitle">Pill-shaped corners, chunky bevels and a physical extrusion model instead of blur elevation. Sharp edges are forbidden.</p>
+        <div class="component-demo">
+          <div class="btn btn-primary">Chunky button</div>
+          <div class="demo-star">★</div>
+          <div class="demo-crayon" style="background:#ffb703"></div>
+          <div class="demo-crayon" style="background:#40c2fd"></div>
+          <div class="demo-crayon" style="background:#ffaeb9"></div>
+        </div>
+        <ul class="safety-list" style="margin-top:2rem">
+          <li><span><strong>Corner radius.</strong> Minimum 24px, up to full pill capsules at 9999px.</span></li>
+          <li><span><strong>Outlines.</strong> Every floating functional item carries a 3-4px ink border in <code>#1E293B</code>.</span></li>
+          <li><span><strong>Depth.</strong> Cards sit on a solid 8px bottom shadow; buttons press down 6px when tapped.</span></li>
+          <li><span><strong>Touch targets.</strong> 64x64px visual minimum, 72x72px active touch frame.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section--tint" id="screens">
+      <div class="container">
+        <h2 class="section-title">Core components</h2>
+        <p class="section-subtitle">The pieces that make up every screen of the app.</p>
+        <div class="features-grid">
+          <div class="card feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg>
+            </div>
+            <h3>Chunky 3D pill buttons</h3>
+            <p>Full pill radius, at least 64px tall, solid fill with a darker shelf and an ink border. They depress 6px on touch with a chime.</p>
+          </div>
+          <div class="card feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 9.4l1.4-1.4a4 4 0 010 5.7l-1.4-1.4a2 2 0 000-2.9zm-2.1 2.1l1.4-1.4a2 2 0 000 2.9l-1.4 1.4a2 2 0 01-2.9 0 2 2 0 010-2.9zM12 2l6 6-6 6-6-6 6-6z"/></svg>
+            </div>
+            <h3>Crayon &amp; brush tray</h3>
+            <p>Oversized slanted crayon pegs. The selected crayon pops out 16px with a selection halo and shows its pigment droplet.</p>
+          </div>
+          <div class="card feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 4h16a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V6a2 2 0 012-2zm0 3v11h16V7H4z"/></svg>
+            </div>
+            <h3>Bubbly picture cards</h3>
+            <p>Ultra-rounded 32px cards with bold line-art previews and a golden star medallion when a page is completed.</p>
+          </div>
+          <div class="card feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 8h-1V6a5 5 0 00-10 0v2H6a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V10a2 2 0 00-2-2zm-6 9a2 2 0 110-4 2 2 0 010 4zM9 8V6a3 3 0 016 0v2H9z"/></svg>
+            </div>
+            <h3>Adult gate modal</h3>
+            <p>Settings, purchases and external links are shielded by a simple addition problem, styled in subdued pastels to avoid toddler intrigue.</p>
+          </div>
+          <div class="card feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg>
+            </div>
+            <h3>Celebration overlay</h3>
+            <p>Rounded 2D confetti bursts from the artwork while a squishy star stamp bounces in with a rubber-band overshoot.</p>
+          </div>
+          <div class="card feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 15l-4-4 1.4-1.4L13 14.2l5.6-5.6L20 10l-7 7z"/></svg>
+            </div>
+            <h3>Palette of crayons</h3>
+            <p>Large, colour-coded swatches with no names on screen - selecting one speaks the colour for the child who can hear it.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">App screens</h2>
+        <p class="section-subtitle">The full journey from categories to celebration.</p>
+        <div class="screens-grid">
+          <div class="screen-card">
+            <img src="assets/screens/categories.webp" alt="Category picker screen">
+            <div class="screen-card-body"><h3>Category picker</h3><p>Bubbly theme cards, one per content theme.</p></div>
+          </div>
+          <div class="screen-card">
+            <img src="assets/screens/coloring.webp" alt="Coloring canvas screen">
+            <div class="screen-card-body"><h3>Coloring canvas</h3><p>Full-screen page with the crayon tray docked along the edge.</p></div>
+          </div>
+          <div class="screen-card">
+            <img src="assets/screens/celebration.webp" alt="Celebration overlay screen">
+            <div class="screen-card-body"><h3>Comes alive</h3><p>Confetti, star stamp and the animated scene.</p></div>
+          </div>
+          <div class="screen-card">
+            <img src="assets/screens/packs.webp" alt="Content packs screen">
+            <div class="screen-card-body"><h3>Packs</h3><p>Paid themes and the remove-ads unlock.</p></div>
+          </div>
+          <div class="screen-card">
+            <img src="assets/screens/settings.webp" alt="Settings screen">
+            <div class="screen-card-body"><h3>Settings</h3><p>Drawing mode, sound, narration and screen time.</p></div>
+          </div>
+          <div class="screen-card">
+            <img src="assets/screens/splash.webp" alt="Splash screen">
+            <div class="screen-card-body"><h3>Splash</h3><p>Warm welcome before the first page.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p class="copyright">&copy; 2026 LearnColoring. All rights reserved.</p>
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="design.html">Design System</a>
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    const mobileToggle = document.querySelector('.mobile-menu-toggle');
+    const mainNav = document.querySelector('.main-nav');
+    if (mobileToggle && mainNav) {
+      mobileToggle.addEventListener('click', () => {
+        mainNav.classList.toggle('open');
+        mobileToggle.classList.toggle('active');
+      });
+    }
+  </script>
+</body>
+</html>

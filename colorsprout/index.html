@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="LearnColoring is a gentle coloring and learning app for children ages 1-5. Tap to fill a region, hear it speak, and watch the page come alive.">
+  <meta name="theme-color" content="#ffb703">
+  <title>LearnColoring - Coloring and learning for little ones</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@600;700;800;900&family=Nunito+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/app_icon.png">
+  <link rel="apple-touch-icon" href="assets/app_icon.png">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-content">
+      <a href="index.html" class="logo">
+        <img src="assets/app_icon.png" alt="LearnColoring app icon" class="logo-icon">
+        <span class="logo-text">LearnColoring</span>
+      </a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="#screens">Screens</a></li>
+          <li><a href="#themes">Themes</a></li>
+          <li><a href="#learning">Learning</a></li>
+          <li><a href="#safety">Safety</a></li>
+          <li><a href="design.html">Design</a></li>
+          <li><a href="support.html">Support</a></li>
+        </ul>
+      </nav>
+      <button class="mobile-menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <span class="eyebrow">Ages 1-5 · iOS &amp; Android</span>
+          <h1 class="hero-title">Coloring that <span>teaches</span> something.</h1>
+          <p class="hero-tagline">Tap a region to fill it, hear it speak its name, and watch the whole picture come alive when the page is finished.</p>
+          <div class="hero-actions">
+            <a href="https://apps.apple.com/app/id6831291385" class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+              App Store
+            </a>
+            <a href="#download" class="btn btn-secondary btn-lg">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M3.6 1.8c-.3.3-.5.8-.5 1.4v17.6c0 .6.2 1.1.5 1.4l.1.1 9.9-9.9v-.2L3.7 1.7l-.1.1zm13.2 11.4L14 12l2.8-1.2 3.5 2c1 .6 1 1.6 0 2.2l-3.5 2.2zm.2 2.7c-.3.2-.7.4-1.1.6L13 16l2.9-2.9.1.1zM5.6 2.6l11.2 8-2.4 2.4L5.6 2.6zM5.6 21.4l9.1-10.4 2.4 2.4-11.2 8 .7-.1z"/></svg>
+              Google Play
+            </a>
+          </div>
+          <div class="hero-badges">
+            <span class="badge">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1l3 6.3 6.9 1-5 4.9 1.2 6.8L12 16.8 5.9 20l1.2-6.8-5-4.9 6.9-1z"/></svg>
+              Kids Category
+            </span>
+            <span class="badge">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.6 3.8 10.7 9 12 5.2-1.3 9-6.4 9-12V5l-9-4zm-1 15l-4-4 1.4-1.4L11 13.2l5.6-5.6L18 9l-7 7z"/></svg>
+              No tracking
+            </span>
+            <span class="badge">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a5 5 0 015 5v1h1a2 2 0 012 2v9a2 2 0 01-2 2H6a2 2 0 01-2-2v-9a2 2 0 012-2h1V7a5 5 0 015-5zm0 2a3 3 0 00-3 3v1h6V7a3 3 0 00-3-3z"/></svg>
+              Parental gate
+            </span>
+          </div>
+        </div>
+        <div class="device">
+          <img src="assets/screens/coloring.webp" alt="LearnColoring canvas screen with a color palette of crayons">
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <span class="eyebrow">How it works</span>
+        <h2 class="section-title">Three taps to a finished picture</h2>
+        <p class="section-subtitle">The whole loop is built for small hands and short attention spans. No reading required.</p>
+        <div class="steps-grid">
+          <div class="step">
+            <h3>Pick a picture</h3>
+            <p>Browse colorful themes of animals, vehicles, food and more. Every page shows a bold line-art preview with a golden star when it is finished.</p>
+          </div>
+          <div class="step">
+            <h3>Tap to fill</h3>
+            <p>Choose a crayon from the tray, then tap a region. It fills with a squishy pop and speaks the name of what was colored.</p>
+          </div>
+          <div class="step">
+            <h3>Watch it come alive</h3>
+            <p>Finish the page and the scene wakes up: the elephant waves, the fish swims, the sun shines, with confetti and a cheerful sound.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tint" id="screens">
+      <div class="container">
+        <span class="eyebrow">The app</span>
+        <h2 class="section-title">Every screen, end to end</h2>
+        <p class="section-subtitle">Landscape-first, big targets and icon-driven navigation, so a one-year-old can drive it without help.</p>
+        <div class="screens-grid">
+          <div class="screen-card">
+            <img src="assets/screens/categories.webp" alt="Category picker with animals, vehicles and more">
+            <div class="screen-card-body">
+              <h3>Categories</h3>
+              <p>Big, colorful picture cards grouped by theme. No text labels for the little ones to get stuck on.</p>
+            </div>
+          </div>
+          <div class="screen-card">
+            <img src="assets/screens/coloring.webp" alt="Coloring canvas with crayon palette">
+            <div class="screen-card-body">
+              <h3>Coloring canvas</h3>
+              <p>A full-screen page with an oversized crayon tray, an undo button and a Done button that appears when the page is ready.</p>
+            </div>
+          </div>
+          <div class="screen-card">
+            <img src="assets/screens/celebration.webp" alt="Celebration overlay with confetti">
+            <div class="screen-card-body">
+              <h3>Comes alive</h3>
+              <p>Confetti, a bouncing star stamp and the animated scene - the emotional core of every finished page.</p>
+            </div>
+          </div>
+          <div class="screen-card">
+            <img src="assets/screens/packs.webp" alt="Content packs screen with buy and watch ad buttons">
+            <div class="screen-card-body">
+              <h3>Content packs</h3>
+              <p>Optional paid packs, unlocked behind a parent gate. Buy once, or watch a child-directed ad.</p>
+            </div>
+          </div>
+          <div class="screen-card">
+            <img src="assets/screens/settings.webp" alt="Settings screen with drawing mode and sound toggles">
+            <div class="screen-card-body">
+              <h3>Parent settings</h3>
+              <p>Tap-to-fill or free draw, sound and narration toggles, screen-time limits, and ad removal.</p>
+            </div>
+          </div>
+          <div class="screen-card">
+            <img src="assets/screens/splash.webp" alt="LearnColoring splash screen">
+            <div class="screen-card-body">
+              <h3>Welcome</h3>
+              <p>A warm splash and a one-step onboarding that drops your child straight into the first page.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <span class="eyebrow">Why parents like it</span>
+        <h2 class="section-title">Built like a toy, not like homework</h2>
+        <p class="section-subtitle">Molded-plastic buttons, chunky crayons and forgiving touch targets - the kind of interface a toddler can bully and still win.</p>
+        <div class="features-grid">
+          <div class="card feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 9.4l1.4-1.4a4 4 0 010 5.7l-1.4-1.4a2 2 0 000-2.9zm-2.1 2.1l1.4-1.4a2 2 0 000 2.9l-1.4 1.4a2 2 0 01-2.9 0 2 2 0 010-2.9zM12 2l6 6-6 6-6-6 6-6zm-1.1 9.9l1.4-1.4a2 2 0 000 2.9l-1.4 1.4a2 2 0 01-2.9 0 2 2 0 010-2.9z"/></svg>
+            </div>
+            <h3>Tap-to-fill</h3>
+            <p>Designed for ages 1-3: tap a region and it fills with the chosen color, with a squishy pop and the region's name spoken aloud.</p>
+          </div>
+          <div class="card feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 17.2V21h3.8L17.9 9.9l-3.8-3.8L3 17.2zM20.7 7.1a1 1 0 000-1.4l-2.4-2.4a1 1 0 00-1.4 0l-1.8 1.8 3.8 3.8 1.8-1.8z"/></svg>
+            </div>
+            <h3>Free draw</h3>
+            <p>Switch to free draw for scribbling with a finger or stylus. A thicker brush and a smaller palette keep little hands on target.</p>
+          </div>
+          <div class="card feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3v10.6c-.6-.4-1.3-.6-2-.6a3 3 0 100 6 3 3 0 003-3V7h4V3h-5z"/></svg>
+            </div>
+            <h3>Voice narration</h3>
+            <p>Object names and color names are spoken gently as your child plays. Turn the voice off in one tap from Settings.</p>
+          </div>
+          <div class="card feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg>
+            </div>
+            <h3>Animated reward</h3>
+            <p>Finishing a page triggers a short celebration with confetti, a star stamp and the subject's own sound.</p>
+          </div>
+          <div class="card feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.3 6.9 1-5 4.9 1.2 6.8L12 16.8 5.9 20l1.2-6.8-5-4.9 6.9-1z"/></svg>
+            </div>
+            <h3>Big safe targets</h3>
+            <p>Every control is at least 64x64px with a 72x72px touch frame, and edge margins stop palm touches from firing a tool.</p>
+          </div>
+          <div class="card feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 8h-1V6a5 5 0 00-10 0v2H6a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V10a2 2 0 00-2-2zm-6 9a2 2 0 110-4 2 2 0 010 4zM9 8V6a3 3 0 016 0v2H9z"/></svg>
+            </div>
+            <h3>Kid-safe by default</h3>
+            <p>No chat, no links out of the app, no third-party tracking SDKs and a math gate in front of anything that costs money.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tint" id="themes">
+      <div class="container">
+        <span class="eyebrow">Content</span>
+        <h2 class="section-title">Themes for every kind of curious</h2>
+        <p class="section-subtitle">Ten free themes ship with the app. Three more packs are available as one-time purchases.</p>
+        <div class="themes-grid">
+          <div class="theme-chip">
+            <img src="assets/pages/elephant.jpg" alt="Elephant coloring page">
+            <span>Animals</span>
+            <span class="tag free">Free</span>
+          </div>
+          <div class="theme-chip">
+            <img src="assets/pages/bluebird.jpg" alt="Bluebird coloring page">
+            <span>Birds</span>
+            <span class="tag free">Free</span>
+          </div>
+          <div class="theme-chip">
+            <img src="assets/pages/butterfly.jpg" alt="Butterfly coloring page">
+            <span>Bugs</span>
+            <span class="tag free">Free</span>
+          </div>
+          <div class="theme-chip">
+            <img src="assets/pages/cow.jpg" alt="Cow coloring page">
+            <span>Farm</span>
+            <span class="tag free">Free</span>
+          </div>
+          <div class="theme-chip">
+            <img src="assets/pages/daisy.jpg" alt="Daisy coloring page">
+            <span>Flowers</span>
+            <span class="tag free">Free</span>
+          </div>
+          <div class="theme-chip">
+            <img src="assets/pages/cupcake.jpg" alt="Cupcake coloring page">
+            <span>Food</span>
+            <span class="tag free">Free</span>
+          </div>
+          <div class="theme-chip">
+            <img src="assets/pages/apple.jpg" alt="Apple coloring page">
+            <span>Fruits</span>
+            <span class="tag free">Free</span>
+          </div>
+          <div class="theme-chip">
+            <img src="assets/pages/apple_tree.jpg" alt="Apple tree coloring page">
+            <span>Trees</span>
+            <span class="tag free">Free</span>
+          </div>
+          <div class="theme-chip">
+            <img src="assets/pages/dolphin.jpg" alt="Dolphin coloring page">
+            <span>Underwater</span>
+            <span class="tag free">Free</span>
+          </div>
+          <div class="theme-chip">
+            <img src="assets/pages/tractor.jpg" alt="Farm tractor coloring page">
+            <span>Vehicles</span>
+            <span class="tag free">Free</span>
+          </div>
+          <div class="theme-chip">
+            <img src="assets/pages/dino.jpg" alt="Dinosaur coloring page">
+            <span>Dinosaurs</span>
+            <span class="tag">Pack</span>
+          </div>
+          <div class="theme-chip">
+            <img src="assets/pages/castle.jpg" alt="Castle coloring page">
+            <span>Fairytale</span>
+            <span class="tag">Pack</span>
+          </div>
+          <div class="theme-chip">
+            <img src="assets/pages/sun.jpg" alt="Smiling sun coloring page">
+            <span>Space</span>
+            <span class="tag">Pack</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <span class="eyebrow">Inside the pages</span>
+        <h2 class="section-title">Real coloring pages, hand-curated</h2>
+        <p class="section-subtitle">Every page is drawn as clean line art with clearly defined fillable regions - 10 to 30 per page - so a single tap always lands somewhere.</p>
+        <div class="pages-grid">
+          <figure class="page-tile">
+            <img src="assets/pages/elephant.jpg" alt="Elephant coloring page from the Animals theme">
+            <figcaption>Elephant</figcaption>
+          </figure>
+          <figure class="page-tile">
+            <img src="assets/pages/bluebird.jpg" alt="Bluebird coloring page from the Birds theme">
+            <figcaption>Bluebird</figcaption>
+          </figure>
+          <figure class="page-tile">
+            <img src="assets/pages/butterfly.jpg" alt="Butterfly coloring page from the Bugs theme">
+            <figcaption>Butterfly</figcaption>
+          </figure>
+          <figure class="page-tile">
+            <img src="assets/pages/cow.jpg" alt="Cow coloring page from the Farm theme">
+            <figcaption>Cow</figcaption>
+          </figure>
+          <figure class="page-tile">
+            <img src="assets/pages/daisy.jpg" alt="Daisy coloring page from the Flowers theme">
+            <figcaption>Daisy</figcaption>
+          </figure>
+          <figure class="page-tile">
+            <img src="assets/pages/apple.jpg" alt="Apple coloring page from the Fruits theme">
+            <figcaption>Apple</figcaption>
+          </figure>
+          <figure class="page-tile">
+            <img src="assets/pages/dolphin.jpg" alt="Dolphin coloring page from the Underwater theme">
+            <figcaption>Dolphin</figcaption>
+          </figure>
+          <figure class="page-tile">
+            <img src="assets/pages/tractor.jpg" alt="Farm tractor coloring page from the Vehicles theme">
+            <figcaption>Farm tractor</figcaption>
+          </figure>
+          <figure class="page-tile">
+            <img src="assets/pages/dino.jpg" alt="Dinosaur coloring page from the Dinosaurs pack">
+            <figcaption>Brachiosaurus</figcaption>
+          </figure>
+          <figure class="page-tile">
+            <img src="assets/pages/castle.jpg" alt="Castle coloring page from the Fairytale pack">
+            <figcaption>Castle</figcaption>
+          </figure>
+          <figure class="page-tile">
+            <img src="assets/pages/sun.jpg" alt="Smiling sun coloring page from the Space pack">
+            <figcaption>Smiling sun</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tint" id="learning">
+      <div class="container">
+        <span class="eyebrow">The learning hook</span>
+        <h2 class="section-title">Every page teaches something</h2>
+        <p class="section-subtitle">Not a curriculum. Just delight that quietly builds vocabulary, one spoken word at a time.</p>
+        <div class="learning-split">
+          <div class="learn-card">
+            <h3><span>1</span>Object naming</h3>
+            <p>Every region has a name. Tapping a colored region speaks it aloud, reinforcing vocabulary in context.</p>
+            <span class="say">"Elephant!"</span>
+          </div>
+          <div class="learn-card">
+            <h3><span>2</span>Color naming</h3>
+            <p>Choosing and applying a color speaks its name, so color words become part of the play, not a lesson.</p>
+            <span class="say">"Beautiful red!"</span>
+          </div>
+          <div class="learn-card">
+            <h3><span>3</span>Animated reward</h3>
+            <p>Finishing a page brings the subject to life, creating a positive emotional link between your child and the thing they just colored.</p>
+            <span class="say">"Beautiful!"</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="safety">
+      <div class="container">
+        <span class="eyebrow">Trust</span>
+        <h2 class="section-title">Safe by design</h2>
+        <p class="section-subtitle">LearnColoring is built to the App Store Kids Category and the Google Play Families Policy, and audited against COPPA.</p>
+        <ul class="safety-list">
+          <li>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.6 3.8 10.7 9 12 5.2-1.3 9-6.4 9-12V5l-9-4zm-1 15l-4-4 1.4-1.4L11 13.2l5.6-5.6L18 9l-7 7z"/></svg>
+            <span><strong>No third-party tracking.</strong> No analytics SDK beyond anonymous crash reports, and no advertising IDs are accessed.</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.6 3.8 10.7 9 12 5.2-1.3 9-6.4 9-12V5l-9-4zm-1 15l-4-4 1.4-1.4L11 13.2l5.6-5.6L18 9l-7 7z"/></svg>
+            <span><strong>Child-directed ads only.</strong> Ad requests are flagged for child-directed treatment, so no personalized or interest-based ads are served.</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.6 3.8 10.7 9 12 5.2-1.3 9-6.4 9-12V5l-9-4zm-1 15l-4-4 1.4-1.4L11 13.2l5.6-5.6L18 9l-7 7z"/></svg>
+            <span><strong>Parental gate.</strong> Every purchase, restore and settings entry is behind a simple math challenge an adult can answer and a toddler cannot.</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.6 3.8 10.7 9 12 5.2-1.3 9-6.4 9-12V5l-9-4zm-1 15l-4-4 1.4-1.4L11 13.2l5.6-5.6L18 9l-7 7z"/></svg>
+            <span><strong>No chat, no outbound links.</strong> Nothing in the app can send your child somewhere else, and no personal data is collected.</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.6 3.8 10.7 9 12 5.2-1.3 9-6.4 9-12V5l-9-4zm-1 15l-4-4 1.4-1.4L11 13.2l5.6-5.6L18 9l-7 7z"/></svg>
+            <span><strong>One-time purchase.</strong> Remove the ads forever with a single non-consumable purchase. No subscriptions, ever.</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.6 3.8 10.7 9 12 5.2-1.3 9-6.4 9-12V5l-9-4zm-1 15l-4-4 1.4-1.4L11 13.2l5.6-5.6L18 9l-7 7z"/></svg>
+            <span><strong>Screen-time limits.</strong> A gentle reminder from Settings keeps sessions short and healthy.</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="cta" id="download">
+      <div class="container">
+        <h2>Ready for a calmer playtime?</h2>
+        <p>LearnColoring turns a tablet into a quiet coloring studio for little ones - no ads you have to argue with, no links out of the app.</p>
+        <div class="hero-actions">
+          <a href="https://apps.apple.com/app/id6831291385" class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+            Download on the App Store
+          </a>
+          <a href="#" class="btn btn-secondary btn-lg">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M3.6 1.8c-.3.3-.5.8-.5 1.4v17.6c0 .6.2 1.1.5 1.4l.1.1 9.9-9.9v-.2L3.7 1.7l-.1.1zm13.2 11.4L14 12l2.8-1.2 3.5 2c1 .6 1 1.6 0 2.2l-3.5 2.2zm.2 2.7c-.3.2-.7.4-1.1.6L13 16l2.9-2.9.1.1zM5.6 2.6l11.2 8-2.4 2.4L5.6 2.6zM5.6 21.4l9.1-10.4 2.4 2.4-11.2 8 .7-.1z"/></svg>
+            Get it on Google Play
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p class="copyright">&copy; 2026 LearnColoring. All rights reserved.</p>
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="design.html">Design System</a>
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    const mobileToggle = document.querySelector('.mobile-menu-toggle');
+    const mainNav = document.querySelector('.main-nav');
+    if (mobileToggle && mainNav) {
+      mobileToggle.addEventListener('click', () => {
+        mainNav.classList.toggle('open');
+        mobileToggle.classList.toggle('active');
+      });
+    }
+  </script>
+</body>
+</html>
