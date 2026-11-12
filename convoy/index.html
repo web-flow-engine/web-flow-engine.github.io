@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Convoy - Convert video, audio, and image files quickly and easily on your Apple device.">
+  <meta name="description" content="Convoy - Convert video, audio, and image files quickly and easily on your Apple device. Remove backgrounds, extract audio, and cut clips on-device.">
   <title>Convoy - Media Converter for Apple Devices</title>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <noscript><style>.reveal { opacity: 1; transform: none; }</style></noscript>
 </head>
 <body>
   <header class="site-header">
@@ -37,7 +38,7 @@
       <div class="container">
         <div class="hero-content">
           <img src="assets/app_icon.png" alt="Convoy" class="hero-logo">
-          <h1 class="hero-title">Convoy - Media Converter</h1>
+          <h1 class="hero-title">Convoy</h1>
           <p class="hero-tagline">Convert video, audio, and image files effortlessly on your Apple device.</p>
           <a href="https://apps.apple.com/app/id6770541535" class="btn btn-primary btn-download" target="_blank" rel="noopener noreferrer">
             <svg class="apple-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
@@ -63,7 +64,7 @@
               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
             </div>
             <h3>Audio Extraction</h3>
-            <p>Extract audio from video files or convert between audio formats like MP3, AAC, WAV, and FLAC.</p>
+            <p>Pull the audio track out of any video and save it as MP3, AAC, WAV, FLAC or more. Pick the exact audio track when a file has several.</p>
           </div>
           <div class="feature-card glass">
             <div class="feature-icon">
@@ -71,6 +72,20 @@
             </div>
             <h3>Image Conversion</h3>
             <p>Convert images between PNG, JPEG, WebP, HEIC, and other formats with batch processing support.</p>
+          </div>
+          <div class="feature-card glass">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm4.5-11H9v2h2v5h2v-5h2.5v-2z"/></svg>
+            </div>
+            <h3>Remove Background</h3>
+            <p>Remove image backgrounds instantly with on-device AI subject segmentation. Nothing is uploaded &mdash; the cut-out happens privately on your device.</p>
+          </div>
+          <div class="feature-card glass">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 11.5c0 1.38-1.12 2.5-2.5 2.5S4 12.88 4 11.5 5.12 9 6.5 9 9 10.12 9 11.5zm12-2.5c0 1.38-1.12 2.5-2.5 2.5s-2.5-1.12-2.5-2.5 1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5zM9 10.5V7H3v3.5c0 2.21 1.79 4 4 4h2c2.21 0 4-1.79 4-4zm7 5.5c2.21 0 4-1.79 4-4V8h-6v3.5c0 2.21 1.79 4 4 4h2z"/></svg>
+            </div>
+            <h3>Extract Clips</h3>
+            <p>Cut out just the moments you want. Set in and out points on any video and export the clip as a new file in seconds.</p>
           </div>
           <div class="feature-card glass">
             <div class="feature-icon">
@@ -83,30 +98,97 @@
       </div>
     </section>
 
-    <section class="section screenshots">
+    <section class="section walkthrough">
       <div class="container">
-        <h2 class="section-title">See It In Action</h2>
-        <div class="screenshots-grid">
-          <div class="screenshot-item glass">
-            <img src="assets/1-home.png" alt="Home screen">
-            <p>Home screen</p>
-          </div>
-          <div class="screenshot-item glass">
-            <img src="assets/2-source.png" alt="Source selection">
-            <p>Source selection</p>
-          </div>
-          <div class="screenshot-item glass">
-            <img src="assets/3-configure.png" alt="Configure settings">
-            <p>Configure settings</p>
-          </div>
-          <div class="screenshot-item glass">
-            <img src="assets/4-converting.png" alt="Converting in progress">
-            <p>Converting in progress</p>
-          </div>
-          <div class="screenshot-item glass">
-            <img src="assets/5-completed.png" alt="Conversion completed">
-            <p>Conversion completed</p>
-          </div>
+        <h2 class="section-title">See It in Action</h2>
+        <p class="section-subtitle">From your library to a finished file in five steps &mdash; every stage runs live on your device, with no uploads and no waiting on a server.</p>
+
+        <ol class="steps">
+          <li class="step reveal">
+            <div class="step-media">
+              <figure class="phone">
+                <img src="assets/1-home.png" alt="Convoy home screen offering Video, Audio, Images, Extract Audio and Batch Conversion" width="1206" height="2622" loading="lazy" decoding="async">
+              </figure>
+            </div>
+            <div class="step-copy">
+              <span class="step-badge">Step 01</span>
+              <h3>Choose what to convert</h3>
+              <p>Start from the home screen and pick a tool &mdash; Video, Audio, Images, Extract Audio or Batch Conversion. Each opens a dedicated flow so you never dig through generic settings.</p>
+            </div>
+          </li>
+
+          <li class="step reveal">
+            <div class="step-media">
+              <figure class="phone">
+                <img src="assets/2-source.png" alt="Select Source screen showing Photo Library, Files App and cloud storage providers" width="1206" height="2622" loading="lazy" decoding="async">
+              </figure>
+            </div>
+            <div class="step-copy">
+              <span class="step-badge">Step 02</span>
+              <h3>Pick your source</h3>
+              <p>Grab a file from your Photo Library or browse the Files app. Google Drive, OneDrive and Dropbox are lined up next, so cloud sources are one tap away.</p>
+            </div>
+          </li>
+
+          <li class="step reveal">
+            <div class="step-media">
+              <figure class="phone">
+                <img src="assets/3-configure.png" alt="Configure screen with target format, quality, bitrate and resolution options" width="1206" height="2622" loading="lazy" decoding="async">
+              </figure>
+            </div>
+            <div class="step-copy">
+              <span class="step-badge">Step 03</span>
+              <h3>Configure the output</h3>
+              <p>Pick a target format, then dial in quality, bitrate and resolution. The estimated file size updates live, so you always know what you are about to get.</p>
+            </div>
+          </li>
+
+          <li class="step reveal">
+            <div class="step-media">
+              <figure class="phone">
+                <img src="assets/4-converting.png" alt="Conversion Progress screen with a progress ring, time left, speed and pause controls" width="1206" height="2622" loading="lazy" decoding="async">
+              </figure>
+            </div>
+            <div class="step-copy">
+              <span class="step-badge">Step 04</span>
+              <h3>Watch it convert</h3>
+              <p>A live progress ring shows the remaining time and current speed. Pause it or cancel it at any point &mdash; nothing runs on a remote server.</p>
+            </div>
+          </li>
+
+          <li class="step reveal">
+            <div class="step-media">
+              <figure class="phone">
+                <img src="assets/5-completed.png" alt="Conversion Complete screen with a preview of the converted file" width="1206" height="2622" loading="lazy" decoding="async">
+              </figure>
+            </div>
+            <div class="step-copy">
+              <span class="step-badge">Step 05</span>
+              <h3>Save or share the result</h3>
+              <p>Preview the finished file, check its resolution and size, then save it to Files or share it straight to another app. It also lands in your History for later.</p>
+            </div>
+          </li>
+        </ol>
+
+        <div class="walkthrough-cta reveal">
+          <a href="https://apps.apple.com/app/id6770541535" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+            <svg class="apple-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+            Download on the App Store
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section">
+      <div class="container">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="contact-content glass">
+          <p class="contact-intro">Questions, feedback, or something not working as expected? Reach us directly.</p>
+          <a href="mailto:shahid610169@gmail.com" class="btn btn-primary btn-contact">
+            <svg class="email-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            Contact Us
+          </a>
+          <p class="support-email">Email: <a href="mailto:shahid610169@gmail.com">shahid610169@gmail.com</a></p>
         </div>
       </div>
     </section>
@@ -130,6 +212,22 @@
         mainNav.classList.toggle('open');
         mobileToggle.classList.toggle('active');
       });
+    }
+
+    const revealTargets = document.querySelectorAll('.reveal');
+    if ('IntersectionObserver' in window && revealTargets.length) {
+      const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15 });
+
+      revealTargets.forEach((target) => revealObserver.observe(target));
+    } else {
+      revealTargets.forEach((target) => target.classList.add('is-visible'));
     }
   </script>
 </body>
